@@ -31,6 +31,7 @@ The mods included in this folder are:
 - The Jewel Vault by Royal_Flu$h (Bugfixes)
 - Countdown by Royal_Flu$h (Bugfixes)
 - Cruel Countdown by Royal_Flu$h (Bugfixes)
+- The Sphere by Royal_Flu$h (Bugfixes, Improved TP Support, Gamepad support, and Light scaling)
 
 The Crystal Maze has a special Twitch Plays support where the support itself
 has its own manual! To replace the manual with the Twitch Plays variant
