@@ -18,10 +18,16 @@
   "EnableInteractiveMode": false,
   "EnableAutomaticEdgework": true,
   "EnableEdgeworkCommand": false,
+  "EnableBossAutoViewPin": true,
   "EnableAutomaticCameraWall": true,
   "EnableEdgeworkCameras": true,
+  "EnableModuleCameraLights": true,
+  "ModuleCameraLightIntensity": 0.5,
+  "EnableLastModuleZoom": true,
   "RepositoryUrl": "https://ktane.timwi.de/",
   "AnalyzerUrl": "https://ktane.timwi.de/More/Logfile%20Analyzer.html",
+  "ScoringSheetId": "1G6hZW0RibjW7n72AkXZgDTHZ-LKj0usRkbAwxSPhcqA",
+  "AutoReturnToSetupMinutes": 5,
   "EnableModeratorsCommand": true,
   "EnableTrollCommands": false,
   "EnableLetterCodes": false,
@@ -33,9 +39,21 @@
   "FindClaimLimit": 3,
   "FindClaimTerms": 3,
   "FindClaimAddTime": 5,
+  "FindClaimDelay": 30,
   "VoteCountdownTime": 60,
   "EnableVoting": true,
   "EnableVoteSolve": true,
+  "EnableVSVoteSolve": true,
+  "MaxVoteSolvesPerBomb": -1,
+  "VoteSolveBossNormalModuleRatio": 0.0,
+  "VoteSolveBossMinSeconds": 0,
+  "VoteSolveNonBossRatio": 0.0,
+  "MinScoreForVoteSolve": 0,
+  "EnableMissionVoteSolve": true,
+  "VoteSolveRewardDecrease": 0.25,
+  "MaxVoteDetonatesPerBomb": -1,
+  "EnableVoteSolveAutomaticNoForClaims": false,
+  "EnableAutoProfiles": true,
   "MinimumYesVotes": {
     "Detonation": 66,
     "VSModeToggle": 51,
@@ -56,18 +74,20 @@
   "MinScoreForNewbomb": 100,
   "StrikePenalty": 6,
   "ModuleToStrikeRatio": 8,
+  "NormalModeSecondsPerModule": 120,
   "PacingEventsOnRunBomb": true,
   "AllowSheetDisabledModules": true,
+  "BombFlipCooldown": 5,
   "EnableTimeModeForEveryone": true,
-  "TimeModeStartingTime": 7.0,
+  "TimeModeStartingTime": 10.0,
   "TimeModeStartingMultiplier": 9.0,
   "TimeModeMaxMultiplier": 15.0,
   "TimeModeMinMultiplier": 1.0,
   "TimeModeSolveBonus": 0.1,
   "TimeModeMultiplierStrikePenalty": 1.0,
-  "TimeModeTimerStrikePenalty": 0.2,
+  "TimeModeTimerStrikePenalty": 0.1,
   "TimeModeMinimumTimeLost": 15,
-  "TimeModeMinimumTimeGained": 20,
+  "TimeModeMinimumTimeGained": 30,
   "AwardDropMultiplierOnStrike": 0.8,
   "TimeModeTimeForActions": true,
   "AutoSetVSModeTeams": true,
@@ -89,153 +109,228 @@
   "TwitchPlaysDebugEnabled": false,
   "TwitchPlaysDebugUsername": "_TPDEBUG",
   "TwitchPlaysDebugUsernameColor": "0, 0, 223",
+  "TestModuleCompatibility": true,
   "InstantModuleClaimCooldown": 15,
   "InstantModuleClaimCooldownExpiry": 3600,
   "CustomMissions": {},
   "ProfileWhitelist": [
-    "Boss Profiles",
-    "NoFMN",
-    "NoFE",
-    "NoFT",
-    "NoFTA",
-    "NoFN",
-    "NoFUN",
-    "NoFP",
-    "NoFML",
-    "NoFIN",
-    "NoFTC",
-    "NoFI",
-    "NoFAC",
-    "NoFMzN",
-    "NoFUS",
-    "NoSF",
-    "NoStages",
-    "NoTall",
-    "NoBF",
-    "NoTIE",
-    "NoOrg",
-    "NoDivided",
-    "NoSouv",
-    "NoSwan",
-    "NoCookie",
-    "NoEB",
-    "NoKey",
-    "NoKeys",
-    "NoTroll",
-    "NoUber",
-    "NoUCN",
-    "No14",
-    "NoTwin",
-    "NoRPS",
-    "NoMysMod",
-    "NoIconic",
-    "NoHM",
-    "NoHeart",
-    "NoOF",
-    "NoKB",
-    "NoAND",
-    "NoAmnesia",
-    "NoLunch",
-    "NoBusy",
-    "No42-501",
-    "NoWO",
-    "NoKPDir",
-    "NoSecC",
-    "NoShoddyC",
-    "NoBMach",
-    "NoZener",
-    "NoKA",
-    "NoFL",
-    "NoKlaxon",
-    "NoSoul",
-    "NoCubeSync",
-    "NoTet",
-    "NoSm",
-    "\nModules Profiles",
-    "No%",
-    "No+",
-    "No3CS",
-    "NoACodes",
-    "NoAnt",
-    "NoBA",
-    "NoBB",
-    "NoBBG",
-    "NoBda",
-    "NoBTK",
-    "NoCheat",
-    "NoCiphers",
-    "NoCM",
-    "NoCmch",
-    "NoCruello",
-    "NoCryptic",
-    "NoCSyn",
-    "NoCube",
+    "Module Profiles",
+    "NoColCipher",
     "NoCycles",
-    "NoDecay",
-    "NoDK",
-    "NoDream",
-    "NoEcho",
-    "NoFacMaze",
-    "NoFCM",
-    "NoFMW",
-    "NoHarm",
-    "NoHerald",
-    "NoHexiom",
-    "NoHog",
     "NoHypercubes",
-    "NoInt",
-    "NoLombax",
-    "NoLousy",
-    "NoMCS",
-    "NoMicro",
-    "NoMisery",
-    "NoMisloc",
-    "NoMul",
-    "NoMza",
-    "NoOcta",
-    "NoOD",
     "NoOKeys",
-    "Noosu",
-    "NoOut",
-    "NoOVF",
-    "NoPow",
-    "NoPWDest",
-    "NoRba",
-    "NoReGBF",
-    "NoRGBA",
+    "NoPPAP",
     "NoRGBMazes",
-    "NoRobot",
-    "NoRS",
-    "NoSamsung",
-    "NoScalar",
-    "NoSCF",
-    "NoStores",
-    "NoSwapper",
-    "NoSwd",
-    "NoTax",
-    "NoTimeKeep",
-    "NoTimeSig",
-    "NoTVAB",
-    "NoUCipher",
-    "NoUCR",
-    "NoUCycle",
-    "NoUnfair",
-    "NoUStores",
-    "NO1",
-    "NO2",
-    "NO3",
-    "NO4",
-    "NO5",
-    "NO6",
-    "NO7",
-    "NO8",
-    "NO9",
     "\nTech Profiles",
     "NoMASRoom",
     "NoFactoryRoom",
     "NoTwo",
     "ON",
-    "VSMode"
+    "VSMode",
+    "NoBossModules",
+    "NoPseudoNeedy",
+    "TP Toggleable",
+    "NoTimeNeedies",
+    "No0",
+    "NoOtherNeedies",
+    "No0+",
+    "No1",
+    "No2",
+    "No3",
+    "No4"
+  ],
+  "ToggleableModules": [
+    "% Grey",
+    "+",
+    "Three Cryptic Steps",
+    "42",
+    "501",
+    "Actions and Consequences",
+    "Access Codes",
+    "Again",
+    "Alarming",
+    "A Massive Amount of Wires",
+    "Amnesia",
+    "A>N<D",
+    "Langton's Ant",
+    "Bamboozled Again",
+    "Bamboozling Button",
+    "Bamboozling Button Grid",
+    "Bandboozled Again",
+    "Beanboozled Again",
+    "Brainf---",
+    "Backdoor Hacking",
+    "B-Machine",
+    "Blackout",
+    "Bamboozling Time Keeper",
+    "Busy Beaver",
+    "The Board Walk",
+    "Clearance Code",
+    "Cheat Checkout",
+    "Channel Surfing",
+    "Custom Keys",
+    "Connected Monitors",
+    "Cruel Match 'em",
+    "Doomsday Button",
+    "Decay",
+    "Discharge Maze",
+    "Divided Squares",
+    "Dimension King",
+    "Duck Konundrum",
+    "Deceptive Rainbow Arrows",
+    "Dreamcipher",
+    "Decomposed RGB Arithmetic",
+    "Encryption Bingo",
+    "Echolocation",
+    "Eight",
+    "Forget Any Color",
+    "Factory Maze",
+    "FizzBoss",
+    "Four-Card Monte",
+    "Forget Everything",
+    "Forget Fractal",
+    "Forgetful Grid",
+    "Forget Infinity",
+    "Forget It Not",
+    "Floor Lights",
+    "Forget Me Later",
+    "Forget Me Maybe",
+    "Forget Me Not",
+    "Forget Me Now",
+    "Forget Maze Not",
+    "Forget Enigma",
+    "Forgetle",
+    "14",
+    "Forget Our Voices",
+    "Forget Perspective",
+    "Forget This",
+    "Forget Them All",
+    "Forget The Colors",
+    "Forget Us Not",
+    "Forget's Ultimate Showdown",
+    "Gemory",
+    "The Generator",
+    "Ghost",
+    "The Grand Prix",
+    "Hickory Dickory Dock",
+    "The Heart",
+    "Heraldry",
+    "Hexiom",
+    "HyperForget",
+    "Encrypted Hangman",
+    "Hogwarts",
+    "The Hypercolor",
+    "Hyperrullo",
+    "Iconic",
+    "ID Exchange",
+    "Identifrac",
+    "In Order",
+    "Intervals",
+    "Identifying Soulless",
+    "Black Arrows",
+    "Kugelblitz",
+    "Turn The Key",
+    "Turn The Keys",
+    "The Klaxon",
+    "Keypad Directionality",
+    "Lombax Cubes",
+    "Lousy Chess",
+    "Lunchtime",
+    "Mazeswapper",
+    "Minecraft Survival",
+    "Micro Modules",
+    "Mineswapper",
+    "Misery Squares",
+    "Mislocation",
+    "Missing Sequence",
+    "Module Maneuvers",
+    "Many Poly",
+    "Multitask",
+    "Matrix Mapping",
+    "Mystery Module",
+    "The Octadecayotton",
+    "OmegaDestroyer",
+    "OmegaForget",
+    "OMISSION",
+    "Organization",
+    "osu!",
+    "Outrageous",
+    "Peek-A-Boo",
+    "Polygrid",
+    "Pattern Hypercube",
+    "Piano Paradox",
+    "Pow",
+    "Pointer Pointer",
+    "Perspective Stacking",
+    "Puppet",
+    "Password Destroyer",
+    "Password Mutilator EX",
+    "Queen’s War",
+    "Random Access Memory",
+    "Ramboozled Again",
+    "ReGret-B Filtering",
+    "RGB Arithmetic",
+    "RGB Hypermaze",
+    "Rain Hell",
+    "Red Light Green Light",
+    "Remember Me Now",
+    "RNG Crystal",
+    "Robot Programming",
+    "RPS Judging",
+    "Repo Selector",
+    "Remember Simple",
+    "The Samsung",
+    "Sbemail Songs",
+    "Scalar Dials",
+    "Seven Choose Four",
+    "Security Council",
+    "Simon Forgets",
+    "Slight Gibberish Twist",
+    "Symbolic Hexabuttons",
+    "Shoddy Chess",
+    "Simon",
+    "Spectre Maze",
+    "Smash, Marry, Kill",
+    "Soulscream",
+    "Soulsong",
+    "Souvenir",
+    "Simon Senses",
+    "Solve Shift",
+    "Spectator Sport",
+    "Simon’s Stages",
+    "Simon Stores",
+    "The Swan",
+    "Simon Swindles",
+    "Tallordered Keys",
+    "Tax Returns",
+    "Tetrahedron",
+    "Timing Is Everything",
+    "The Time Keeper",
+    "Time Signatures",
+    "Turing Machine Nightmare",
+    "The Nobody’s Code",
+    "Torture",
+    "The Troll",
+    "Temporal Sequence",
+    "Three Sentence Horror",
+    "Top 10 Numbers",
+    "TV",
+    "The Very Annoying Button",
+    "The Twin",
+    "Twister",
+    "Two Factor Widget",
+    "Übermodule",
+    "Ultimate Cipher",
+    "Ultimate Custom Night",
+    "Unfair’s Cruel Revenge",
+    "Ultimate Cycle",
+    "UltraStores",
+    "Voltage Meter Widget",
+    "WAR",
+    "Whiteout",
+    "X-Rotor",
+    "XY-Ray",
+    "Zener Cards"
   ],
   "BombCustomMessages": {
     "ttks": "Turn the Keys is a module on this bomb. It dictates some modules be delayed until others are finished. Until Turn the Keys is finished, you should avoid doing the following modules:\nLeft Key: Maze, Memory, Complicated Wires, Wire Sequence, Cryptography\nRight Key: Simon Says, Semaphore, Combination Lock, Astrology, Switches, Plumbing",
@@ -379,6 +474,82 @@
       "Enabled": true,
       "Hidden": false
     },
+    "fair+2needies": {
+      "DisplayName": "Fair + 2 Needies",
+      "Pools": [
+        {
+          "Definition": "AllSolvable",
+          "Weight": 1.0
+        },
+        {
+          "Definition": "AllNeedy: Mods",
+          "Weight": 0.0,
+          "Reward": 20,
+          "Time": 0
+        },
+        {
+          "Definition": "AllNeedy: Mods",
+          "Weight": 0.0,
+          "Reward": 20,
+          "Time": 0
+        }
+      ],
+      "MinModules": 3,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "fair+needysometimes": {
+      "DisplayName": "Fair + Needy Sometimes",
+      "Pools": [
+        {
+          "Definition": "AllSolvable",
+          "Weight": 1.0
+        },
+        {
+          "Definition": "AllModules",
+          "Weight": 0.0
+        }
+      ],
+      "MinModules": 2,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "fair+neediessometimes": {
+      "DisplayName": "Fair + Needies Sometimes",
+      "Pools": [
+        {
+          "Definition": "AllSolvable",
+          "Weight": 0.8
+        },
+        {
+          "Definition": "AllModules",
+          "Weight": 0.2
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "chaos": {
+      "DisplayName": "Chaos",
+      "Pools": [
+        {
+          "Definition": "AllModules",
+          "Weight": 1.0
+        },
+        {
+          "Definition": "AllSolvable",
+          "Weight": 0.0
+        }
+      ],
+      "MinModules": 2,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
     "lighteasy": {
       "DisplayName": "Light Easy Mix",
       "Pools": [
@@ -398,18 +569,17 @@
       "Enabled": true,
       "Hidden": false
     },
-    "easy": {
+    "mixedeasy": {
       "DisplayName": "Easy Mix",
       "Pools": [
         {
-          "Definition": "ALL_SOLVABLE",
+          "Definition": "AllSolvable",
           "Weight": 0.5
         },
         {
-          "Definition": "SCORE, <= 7",
+          "Definition": "Score: <= 7",
           "Weight": 0.5,
-          "Reward": 3,
-          "Time": 120
+          "Reward": 3
         }
       ],
       "MinModules": 1,
@@ -468,15 +638,15 @@
       "Enabled": true,
       "Hidden": false
     },
-    "medium": {
+    "mixedmedium": {
       "DisplayName": "Medium Mix",
       "Pools": [
         {
-          "Definition": "ALL_SOLVABLE",
+          "Definition": "AllSolvable",
           "Weight": 0.5
         },
         {
-          "Definition": "SCORE, > 7, <= 14",
+          "Definition": "Score: > 7, <= 14",
           "Weight": 0.5
         }
       ],
@@ -534,16 +704,22 @@
       "Enabled": true,
       "Hidden": false
     },
-    "hard": {
+    "mixedhard": {
       "DisplayName": "Hard Mix",
       "Pools": [
         {
-          "Definition": "ALL_SOLVABLE",
+          "Definition": "AllSolvable",
           "Weight": 0.5
         },
         {
-          "Definition": "SCORE, > 14, <= 25",
-          "Weight": 0.5,
+          "Definition": "Score: > 14, <= 25",
+          "Weight": 0.3,
+          "Reward": 10,
+          "Time": 240
+        },
+        {
+          "Definition": "Score: > 14",
+          "Weight": 0.2,
           "Reward": 10,
           "Time": 240
         }
@@ -587,6 +763,234 @@
       "Enabled": true,
       "Hidden": false
     },
+    "easy": {
+      "DisplayName": "Easy Mix",
+      "Pools": [
+        {
+          "Definition": "ALL_SOLVABLE",
+          "Weight": 0.5
+        },
+        {
+          "Definition": "SCORE, <= 7",
+          "Weight": 0.5,
+          "Reward": 3,
+          "Time": 120
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "medium": {
+      "DisplayName": "Medium Mix",
+      "Pools": [
+        {
+          "Definition": "ALL_SOLVABLE",
+          "Weight": 0.5
+        },
+        {
+          "Definition": "SCORE, > 7, <= 14",
+          "Weight": 0.5
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "hard": {
+      "DisplayName": "Hard Mix",
+      "Pools": [
+        {
+          "Definition": "ALL_SOLVABLE",
+          "Weight": 0.5
+        },
+        {
+          "Definition": "SCORE, > 14, <= 25",
+          "Weight": 0.5,
+          "Reward": 10,
+          "Time": 240
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "expert": {
+      "DisplayName": "Strict Expert",
+      "Pools": [
+        {
+          "Definition": "Score: <= 8",
+          "Weight": 0.2,
+          "Reward": 3,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 9, <= 15",
+          "Weight": 0.3
+        },
+        {
+          "Definition": "Score: >= 16, <= 24",
+          "Weight": 0.3,
+          "Reward": 8,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 25",
+          "Weight": 0.2,
+          "Reward": 10,
+          "Time": 240
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "easy+boss": {
+      "DisplayName": "Strict Easy",
+      "Pools": [
+        {
+          "Definition": "Score: <= 8",
+          "Weight": 0.5,
+          "Reward": 3,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 9, <= 15",
+          "Weight": 0.4
+        },
+        {
+          "Definition": "Score: >= 16, <= 24",
+          "Weight": 0.1,
+          "Reward": 8,
+          "Time": 90
+        },
+        {
+          "Definition": "BossModule",
+          "Weight": 0.0,
+          "Reward": 0,
+          "Time": 300
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "medium+boss": {
+      "DisplayName": "Strict Medium",
+      "Pools": [
+        {
+          "Definition": "Score: <= 8",
+          "Weight": 0.4,
+          "Reward": 3,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 9, <= 15",
+          "Weight": 0.35
+        },
+        {
+          "Definition": "Score: >= 16, <= 24",
+          "Weight": 0.2,
+          "Reward": 8,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 25",
+          "Weight": 0.05,
+          "Reward": 10,
+          "Time": 240
+        },
+        {
+          "Definition": "BossModule",
+          "Weight": 0.0,
+          "Reward": 0,
+          "Time": 300
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "hard+boss": {
+      "DisplayName": "Strict Hard",
+      "Pools": [
+        {
+          "Definition": "Score: <= 8",
+          "Weight": 0.3,
+          "Reward": 3,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 9, <= 15",
+          "Weight": 0.35
+        },
+        {
+          "Definition": "Score: >= 16, <= 24",
+          "Weight": 0.25,
+          "Reward": 8,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 25",
+          "Weight": 0.1,
+          "Reward": 10,
+          "Time": 240
+        },
+        {
+          "Definition": "BossModule",
+          "Weight": 0.0,
+          "Reward": 0,
+          "Time": 300
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "expert+boss": {
+      "DisplayName": "Strict Expert",
+      "Pools": [
+        {
+          "Definition": "Score: <= 8",
+          "Weight": 0.2,
+          "Reward": 3,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 9, <= 15",
+          "Weight": 0.3
+        },
+        {
+          "Definition": "Score: >= 16, <= 24",
+          "Weight": 0.3,
+          "Reward": 8,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 25",
+          "Weight": 0.2,
+          "Reward": 10,
+          "Time": 240
+        },
+        {
+          "Definition": "BossModule",
+          "Weight": 0.0,
+          "Reward": 0,
+          "Time": 300
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
     "variety": {
       "DisplayName": "Variety Mix",
       "Pools": [
@@ -609,6 +1013,86 @@
         {
           "Definition": "ALL_SOLVABLE",
           "Weight": 0.25
+        }
+      ],
+      "MinModules": 1,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "variety+boss": {
+      "DisplayName": "Variety + Boss",
+      "Pools": [
+        {
+          "Definition": "Score: <= 4",
+          "Weight": 0.11,
+          "Reward": 2,
+          "Time": 60
+        },
+        {
+          "Definition": "Score: <= 9",
+          "Weight": 0.15,
+          "Reward": 3,
+          "Time": 120
+        },
+        {
+          "Definition": "Score: >= 5, <= 14",
+          "Weight": 0.15
+        },
+        {
+          "Definition": "Score: >= 5, <= 19",
+          "Weight": 0.13
+        },
+        {
+          "Definition": "Score: >= 10, <= 24",
+          "Weight": 0.13
+        },
+        {
+          "Definition": "Score: >= 10, <= 29",
+          "Weight": 0.11,
+          "Reward": 8,
+          "Time": 180
+        },
+        {
+          "Definition": "Score: >= 20",
+          "Weight": 0.09,
+          "Reward": 10,
+          "Time": 240
+        },
+        {
+          "Definition": "AllSolvable",
+          "Weight": 0.0865
+        },
+        {
+          "Definition": "DisabledBy: NoBossModules",
+          "Weight": 0.0435,
+          "Reward": 0,
+          "Time": 300
+        },
+        {
+          "Definition": "DisabledBy: NoBossModules",
+          "Weight": 0.0,
+          "Reward": 0,
+          "Time": 300
+        }
+      ],
+      "MinModules": 2,
+      "MaxModules": 101,
+      "Enabled": true,
+      "Hidden": false
+    },
+    "testing": {
+      "DisplayName": "test dist",
+      "Pools": [
+        {
+          "Definition": "BossModule",
+          "Weight": 0.5,
+          "Reward": 3,
+          "Time": 90
+        },
+        {
+          "Definition": "Score: >= 5",
+          "Weight": 0.5
         }
       ],
       "MinModules": 1,
@@ -644,7 +1128,9 @@
   "HoldableInvalidCommand": "Sorry @{1}, that command for Holdable !{0} is invalid.",
   "HoldableCommandError": "Sorry @{1}, Holdable !{0} responded with the following error: {2}",
   "AwardSolve": "VoteYea {1} solved Module {0} ({3})! +{2} points. VoteYea",
+  "AwardSolveNoPoints": "VoteYea {1} solved Module {0} ({2})! VoteYea",
   "AwardVsSolve": "VoteYea {1} solved Module {0} ({3})! +{2} points. {4} HP from {5}. VoteYea",
+  "AwardVsSolveNoPoints": "VoteYea {1} solved Module {0} ({2})! -{3} HP from {4}. VoteYea",
   "AwardStrike": "VoteNay Module {0} ({6}) got {1} strike{2}! {7} points from {4}{5} VoteNay",
   "AwardVsStrike": "VoteNay Module {0} ({6}) got {1} strike{2}! {7} HP from {4}. {8} points from {9}{5} VoteNay",
   "AwardHoldableStrike": "VoteNay Holdable !{0} got {1} strike{2}! {3} points from {4}{5} VoteNay",
@@ -687,7 +1173,7 @@
   "TakeInProgress": "Sorry @{0}, There is already a takeover attempt for Module {1} ({2}) in progress.",
   "ModuleIsMine": "{0} confirms they are still working on {1} ({2})",
   "TooManyClaimed": "ItsBoshyTime {0}, you may only have {1} claimed modules. The claim has been queued.",
-  "TooManyClaimedOverride": "ItsBoshyTime {0}, you may only have {1} claimed modules, unless all of your claimed modules are in the command queue. The claim has been queued.",
+  "TooManyClaimedQueue": "ItsBoshyTime {0}, you may only have {1} claimed modules, and {2} ({3}) is not in the command queue. The claim has been queued.",
   "NoUnclaimed": "Sorry {0}, There are no more unclaimed modules.",
   "ModulePlayer": "Module {0} ({2}) was claimed by {1}",
   "AlreadyClaimed": "Sorry @{2}, Module {0} ({3}) is currently claimed by {1}. If you think they have abandoned it, you may type !{0} take to free it up.",
@@ -710,17 +1196,19 @@
   "TrainingModeCommandDisabled": "@{0}, Only authorized users may enable/disable Training Mode",
   "RunCommandDisabled": "Sorry @{0}, Only authorized users may use the !run command.",
   "ProfileCommandDisabled": "Sorry @{0}, profile management is currently disabled.",
+  "ReturningAutomatically": "Automatically returning to the office due to inactivity.",
   "RetryInactive": "Sorry, retry is inactive. Returning to hallway instead.",
   "RetryModeOrProfileChange": "There has been a change to profiles and/or game modes since the last bomb. Returning to hallway instead.",
   "ProfileActionUseless": "That profile ({0}) is already {1}.",
   "ProfileNotWhitelisted": "That profile ({0}) cannot be enabled/disabled.",
   "ProfileListEnabled": "Currently enabled profiles: {0}",
-  "ProfileListAll": "All profiles: {0}",
+  "ProfileListAll": "All profiles can be seen on this website: https://profiles.marksam.net \n Any individual modules listed as profiles are now disabable by using !module (enable/disable) (module name) \n Check which modules are disabled by using !profiles disabled by TP Toggleable",
   "AddedUserPower": "Added access levels ({0}) to user \"{1}\"",
   "RemoveUserPower": "Removed access levels ({0}) from user \"{1}\"",
   "BombHelp": "The Bomb: !bomb hold [pick up] | !bomb drop | !bomb turn [turn to the other side] | !bomb edgework [show the widgets on the sides] | !bomb top [show one side; sides are Top/Bottom/Left/Right | !bomb time [time remaining] | !bomb timestamp [bomb start time]",
   "BlankBombEdgework": "Not set, use !edgework <edgework> to set!\nUse !bomb edgework or !bomb edgework 45 to view the bomb edges.",
   "BombEdgework": "{0}",
+  "BombEdgeworkFor": "Edgework for {0} ({1}): {2} (bomb {3})",
   "BombTimeRemaining": "panicBasket [{0}] out of [{1}].",
   "BombTimeStamp": "The Date/Time this bomb started is {0:F}",
   "BombDetonateCommand": "panicBasket This bomb's gonna blow!",
@@ -733,9 +1221,13 @@
   "NotesTaken": "Notes Taken for Note Slot {0}: {1}",
   "NotesAppended": "Notes appended to Note Slot {0}: {1}",
   "NoteSlotCleared": "Note Slot {0} Cleared.",
+  "CurrentMission": "Current mission: {0}. {1}",
+  "CurrentMissionNull": "There is no mission running.",
   "GiveBonusPoints": "{0} awarded {1} points by {2}",
   "GiveBonusSolves": "{0} awarded {1} solves by {2}",
   "GiveBonusStrikes": "{0} awarded {1} strikes by {2}",
   "UnsubmittableAnswerPenalty": "Sorry {0}, The answer for module {1} ({2}) couldn't be submitted! You lose {3} point{4}, please only submit correct answers.",
-  "UnsupportedNeedyWarning": "Found an unsupported Needy Component. Disabling it."
+  "UnsupportedNeedyWarning": "Found an unsupported Needy Component. Disabling it.",
+  "TechSupportBlock": "@{1}, module {0} ({2}) has been interrupted by Tech Support and is completely inoperable.",
+  "BackdoorHackingBlock": "@{1}, module {0} ({2}) is completely inoperable while you are being hacked."
 }
